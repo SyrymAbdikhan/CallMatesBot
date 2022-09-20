@@ -1,0 +1,3 @@
+
+MSG_SIZE = 20
+SPAM_LIMIT = 20
