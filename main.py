@@ -32,7 +32,7 @@ async def help_cmd(event) -> None:
 
 
 @bot.on(events.NewMessage(pattern=r'/all'))
-@bot.on(events.NewMessage(pattern=r'@all'))
+@bot.on(events.NewMessage(pattern=r'^@all$'))
 async def all_cmd(event) -> None:
     logging.info(f'{event.sender_id=} called cmd=all in {event.chat_id=}')
     
